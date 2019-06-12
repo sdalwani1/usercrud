@@ -1,0 +1,14 @@
+2019/06/12 09:48:26 [error] [php] include(Users.php): failed to open stream: No such file or directory (C:\xampp\htdocs\yiiframework\yii\framework\YiiBase.php:463)
+Stack trace:
+#0 C:\xampp\htdocs\yiiframework\usercrud\protected\controllers\UserController.php(7): spl_autoload_call()
+#1 C:\xampp\htdocs\yiiframework\yii\framework\web\actions\CInlineAction.php(49): UserController->actionIndex()
+#2 C:\xampp\htdocs\yiiframework\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\yiiframework\yii\framework\web\CController.php(286): UserController->runAction()
+#4 C:\xampp\htdocs\yiiframework\yii\framework\web\CController.php(265): UserController->runActionWithFilters()
+#5 C:\xampp\htdocs\yiiframework\yii\framework\web\CWebApplication.php(282): UserController->run()
+#6 C:\xampp\htdocs\yiiframework\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\xampp\htdocs\yiiframework\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\yiiframework\usercrud\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=User/index
+in C:\xampp\htdocs\yiiframework\usercrud\protected\controllers\UserController.php (7)
+in C:\xampp\htdocs\yiiframework\usercrud\index.php (13)
