@@ -253,3 +253,219 @@ Stack trace:
 REQUEST_URI=/index.php?r=users/register
 in C:\xampp\htdocs\yiiframework\usercrud\protected\controllers\UsersController.php (192)
 in C:\xampp\htdocs\yiiframework\usercrud\index.php (13)
+2019/06/19 10:11:34 [error] [exception.ParseError] ParseError: syntax error, unexpected 'array' (T_ARRAY), expecting ')' in /usr/share/nginx/html/usercrud/protected/views/layouts/main.php:37
+Stack trace:
+#0 /usr/share/nginx/html/frmwork/framework/web/CBaseController.php(95): CBaseController->renderInternal('/usr/share/ngin...', Array, true)
+#1 /usr/share/nginx/html/frmwork/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/usr/share/ngin...', Array, true)
+#2 /usr/share/nginx/html/frmwork/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div id="conten...')
+#3 /usr/share/nginx/html/frmwork/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div id="conten...')
+#4 /usr/share/nginx/html/frmwork/framework/web/CBaseController.php(206): COutputProcessor->run()
+#5 /usr/share/nginx/html/frmwork/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#6 /usr/share/nginx/html/usercrud/protected/views/layouts/column1.php(6): CBaseController->endContent()
+#7 /usr/share/nginx/html/frmwork/framework/web/CBaseController.php(126): require('/usr/share/ngin...')
+#8 /usr/share/nginx/html/frmwork/framework/web/CBaseController.php(95): CBaseController->renderInternal('/usr/share/ngin...', Array, true)
+#9 /usr/share/nginx/html/frmwork/framework/web/CController.php(784): CBaseController->renderFile('/usr/share/ngin...', Array, true)
+#10 /usr/share/nginx/html/usercrud/protected/controllers/SiteController.php(32): CController->render('index')
+#11 /usr/share/nginx/html/frmwork/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#12 /usr/share/nginx/html/frmwork/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /usr/share/nginx/html/frmwork/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#14 /usr/share/nginx/html/frmwork/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(282): CController->run('index')
+#16 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(141): CWebApplication->runController('site/index')
+#17 /usr/share/nginx/html/frmwork/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#18 /usr/share/nginx/html/usercrud/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/index.php?r=site/index
+HTTP_REFERER=http://usercrud.local/index.php?r=site/page&view=about
+---
+2019/06/19 10:12:04 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO) in /usr/share/nginx/html/frmwork/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /usr/share/nginx/html/frmwork/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /usr/share/nginx/html/frmwork/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /usr/share/nginx/html/frmwork/framework/base/CModule.php(387): CDbConnection->init()
+#3 /usr/share/nginx/html/frmwork/framework/base/CApplication.php(450): CModule->getComponent('db')
+#4 /usr/share/nginx/html/frmwork/framework/db/ar/CActiveRecord.php(634): CApplication->getDb()
+#5 /usr/share/nginx/html/frmwork/framework/db/ar/CActiveRecord.php(2361): CActiveRecord->getDbConnection()
+#6 /usr/share/nginx/html/frmwork/framework/db/ar/CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(RegistrationForm))
+#7 /usr/share/nginx/html/frmwork/framework/db/ar/CActiveRecord.php(79): CActiveRecord->getMetaData()
+#8 /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php(178): CActiveRecord->__construct()
+#9 /usr/share/nginx/html/frmwork/framework/web/actions/CInlineAction.php(49): UsersController->actionRegister()
+#10 /usr/share/nginx/html/frmwork/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 /usr/share/nginx/html/frmwork/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /usr/share/nginx/html/frmwork/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 /usr/share/nginx/html/frmwork/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 /usr/share/nginx/html/frmwork/framework/web/CController.php(291): CFilterChain->run()
+#17 /usr/share/nginx/html/frmwork/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(282): CController->run('register')
+#19 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(141): CWebApplication->runController('users/register')
+#20 /usr/share/nginx/html/frmwork/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /usr/share/nginx/html/usercrud/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/index.php?r=users/register
+HTTP_REFERER=http://usercrud.local/index.php?r=site/index
+---
+2019/06/19 10:43:05 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in /usr/share/nginx/html/frmwork/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /usr/share/nginx/html/frmwork/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /usr/share/nginx/html/frmwork/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /usr/share/nginx/html/frmwork/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /usr/share/nginx/html/frmwork/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /usr/share/nginx/html/frmwork/framework/web/CController.php(291): CFilterChain->run()
+#6 /usr/share/nginx/html/frmwork/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(141): CWebApplication->runController('users/admin')
+#9 /usr/share/nginx/html/frmwork/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /usr/share/nginx/html/usercrud/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=users/admin
+HTTP_REFERER=http://usercrud.local/index.php?r=users/index
+---
+2019/06/19 10:43:25 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in /usr/share/nginx/html/frmwork/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /usr/share/nginx/html/frmwork/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /usr/share/nginx/html/frmwork/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /usr/share/nginx/html/frmwork/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /usr/share/nginx/html/frmwork/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /usr/share/nginx/html/frmwork/framework/web/CController.php(291): CFilterChain->run()
+#6 /usr/share/nginx/html/frmwork/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(141): CWebApplication->runController('users/admin')
+#9 /usr/share/nginx/html/frmwork/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /usr/share/nginx/html/usercrud/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=users/admin
+HTTP_REFERER=http://usercrud.local/index.php?r=users/index
+---
+2019/06/19 10:45:08 [error] [exception.ParseError] ParseError: syntax error, unexpected '!', expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /usr/share/nginx/html/usercrud/protected/views/layouts/main.php:37
+Stack trace:
+#0 /usr/share/nginx/html/frmwork/framework/web/CBaseController.php(95): CBaseController->renderInternal('/usr/share/ngin...', Array, true)
+#1 /usr/share/nginx/html/frmwork/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/usr/share/ngin...', Array, true)
+#2 /usr/share/nginx/html/frmwork/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div class="spa...')
+#3 /usr/share/nginx/html/frmwork/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div class="spa...')
+#4 /usr/share/nginx/html/frmwork/framework/web/CBaseController.php(206): COutputProcessor->run()
+#5 /usr/share/nginx/html/frmwork/framework/web/CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#6 /usr/share/nginx/html/usercrud/protected/views/layouts/column2.php(22): CBaseController->endContent()
+#7 /usr/share/nginx/html/frmwork/framework/web/CBaseController.php(126): require('/usr/share/ngin...')
+#8 /usr/share/nginx/html/frmwork/framework/web/CBaseController.php(95): CBaseController->renderInternal('/usr/share/ngin...', Array, true)
+#9 /usr/share/nginx/html/frmwork/framework/web/CController.php(784): CBaseController->renderFile('/usr/share/ngin...', Array, true)
+#10 /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php(130): CController->render('index', Array)
+#11 /usr/share/nginx/html/frmwork/framework/web/actions/CInlineAction.php(49): UsersController->actionIndex()
+#12 /usr/share/nginx/html/frmwork/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 /usr/share/nginx/html/frmwork/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#15 /usr/share/nginx/html/frmwork/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 /usr/share/nginx/html/frmwork/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 /usr/share/nginx/html/frmwork/framework/web/CController.php(291): CFilterChain->run()
+#19 /usr/share/nginx/html/frmwork/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(282): CController->run('index')
+#21 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(141): CWebApplication->runController('users/index')
+#22 /usr/share/nginx/html/frmwork/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#23 /usr/share/nginx/html/usercrud/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/index.php?r=users/index
+---
+2019/06/19 10:45:57 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in /usr/share/nginx/html/frmwork/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /usr/share/nginx/html/frmwork/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /usr/share/nginx/html/frmwork/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /usr/share/nginx/html/frmwork/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /usr/share/nginx/html/frmwork/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /usr/share/nginx/html/frmwork/framework/web/CController.php(291): CFilterChain->run()
+#6 /usr/share/nginx/html/frmwork/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(141): CWebApplication->runController('users/admin')
+#9 /usr/share/nginx/html/frmwork/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /usr/share/nginx/html/usercrud/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=users/admin
+HTTP_REFERER=http://usercrud.local/index.php?r=users/create
+---
+2019/06/19 10:59:38 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in /usr/share/nginx/html/frmwork/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /usr/share/nginx/html/frmwork/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /usr/share/nginx/html/frmwork/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /usr/share/nginx/html/frmwork/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /usr/share/nginx/html/frmwork/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /usr/share/nginx/html/frmwork/framework/web/CController.php(291): CFilterChain->run()
+#6 /usr/share/nginx/html/frmwork/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(282): CController->run('create')
+#8 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(141): CWebApplication->runController('users/create')
+#9 /usr/share/nginx/html/frmwork/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /usr/share/nginx/html/usercrud/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=users/create
+HTTP_REFERER=http://usercrud.local/index.php?r=users/index
+---
+2019/06/19 10:59:41 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in /usr/share/nginx/html/frmwork/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /usr/share/nginx/html/frmwork/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /usr/share/nginx/html/frmwork/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /usr/share/nginx/html/frmwork/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /usr/share/nginx/html/frmwork/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /usr/share/nginx/html/frmwork/framework/web/CController.php(291): CFilterChain->run()
+#6 /usr/share/nginx/html/frmwork/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(141): CWebApplication->runController('users/admin')
+#9 /usr/share/nginx/html/frmwork/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /usr/share/nginx/html/usercrud/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=users/admin
+HTTP_REFERER=http://usercrud.local/index.php?r=users/index
+---
+2019/06/19 11:00:36 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in /usr/share/nginx/html/frmwork/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /usr/share/nginx/html/frmwork/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /usr/share/nginx/html/frmwork/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /usr/share/nginx/html/frmwork/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /usr/share/nginx/html/frmwork/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /usr/share/nginx/html/frmwork/framework/web/CController.php(291): CFilterChain->run()
+#6 /usr/share/nginx/html/frmwork/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(282): CController->run('create')
+#8 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(141): CWebApplication->runController('users/create')
+#9 /usr/share/nginx/html/frmwork/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /usr/share/nginx/html/usercrud/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=users/create
+---
+2019/06/19 11:00:42 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in /usr/share/nginx/html/frmwork/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /usr/share/nginx/html/frmwork/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /usr/share/nginx/html/frmwork/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /usr/share/nginx/html/frmwork/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /usr/share/nginx/html/frmwork/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /usr/share/nginx/html/frmwork/framework/web/CController.php(291): CFilterChain->run()
+#6 /usr/share/nginx/html/frmwork/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(282): CController->run('index')
+#8 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(141): CWebApplication->runController('users/index')
+#9 /usr/share/nginx/html/frmwork/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /usr/share/nginx/html/usercrud/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=users/index
+---
+2019/06/19 11:00:50 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in /usr/share/nginx/html/frmwork/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /usr/share/nginx/html/frmwork/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /usr/share/nginx/html/frmwork/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /usr/share/nginx/html/frmwork/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /usr/share/nginx/html/frmwork/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /usr/share/nginx/html/frmwork/framework/web/CController.php(291): CFilterChain->run()
+#6 /usr/share/nginx/html/frmwork/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(282): CController->run('index')
+#8 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(141): CWebApplication->runController('users/index')
+#9 /usr/share/nginx/html/frmwork/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /usr/share/nginx/html/usercrud/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=users/index
+HTTP_REFERER=http://usercrud.local/index.php?r=users/view&id=3
+---

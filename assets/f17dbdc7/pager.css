@@ -1,0 +1,98 @@
+/**
+ * CSS styles for CLinkPager.
+ *
+ * @author Qiang Xue <qiang.xue@gmail.com>
+ * @link http://www.yiiframework.com/
+ * @copyright 2008-2010 Yii Software LLC
+ * @license http://www.yiiframework.com/license/
+ * @since 1.0
+ */
+
+ul.yiiPager
+{
+	/*font-size:11px;*/
+	font-size:12px;
+	border:0;
+	margin:0;
+	padding:0;
+	line-height:100%;
+	display:inline;
+}
+
+ul.yiiPager li
+{
+	display:inline;
+}
+
+ul.yiiPager a:link,
+ul.yiiPager a:visited
+{
+	/*border:solid 1px #9aafe5;*/
+	border:1px solid #ddd;
+	font-weight:bold;
+	/*color:#0e509e;
+	padding:1px 6px;*/
+	color:#585858;
+	padding:10px;
+	text-decoration:none;
+	
+	border-radius:4px;
+	background:#eee;
+}
+
+ul.yiiPager .page a
+{
+	font-weight:normal;
+}
+
+ul.yiiPager a:hover
+{
+	/*border:solid 1px #0e509e;*/
+	
+	border:1px solid #ddd;
+	background:#2587C3;
+	color:#fff;
+}
+
+ul.yiiPager .selected a
+{
+	/*background:#2e6ab1;*/
+	background:#2587C3;
+	color:#FFFFFF;
+	font-weight:bold;
+}
+
+ul.yiiPager .active a
+{
+	/*background:#2e6ab1;*/
+	background:#2587C3;
+	color:#FFFFFF;
+	font-weight:bold;
+}
+
+ul.yiiPager .hidden a
+{
+	/*border:solid 1px #DEDEDE;*/
+	border:1px solid #ddd;
+	/*color:#888888;*/
+	color:#585858;
+	
+	padding:10px;
+	border-radius:4px;
+}
+
+ul.yiiPager .hidden a:hover
+{
+	background:#2587C3 !important;
+	color:#FFFFFF !important;
+	font-weight:bold;
+}
+
+/**
+ * Hide first and last buttons by default.
+ */
+ul.yiiPager .first,
+ul.yiiPager .last
+{
+	/*display:none;*/
+}
