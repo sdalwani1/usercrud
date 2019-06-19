@@ -469,3 +469,20 @@ Stack trace:
 REQUEST_URI=/index.php?r=users/index
 HTTP_REFERER=http://usercrud.local/index.php?r=users/view&id=3
 ---
+2019/06/19 14:11:26 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in /usr/share/nginx/html/frmwork/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /usr/share/nginx/html/frmwork/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /usr/share/nginx/html/frmwork/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /usr/share/nginx/html/frmwork/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /usr/share/nginx/html/frmwork/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /usr/share/nginx/html/frmwork/framework/web/CController.php(291): CFilterChain->run()
+#6 /usr/share/nginx/html/frmwork/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(282): CController->run('index')
+#8 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(141): CWebApplication->runController('users/index')
+#9 /usr/share/nginx/html/frmwork/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /usr/share/nginx/html/usercrud/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=users/index
+HTTP_REFERER=http://usercrud.local/index.php?r=site/login
+---
