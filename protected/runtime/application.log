@@ -486,3 +486,916 @@ Stack trace:
 REQUEST_URI=/index.php?r=users/index
 HTTP_REFERER=http://usercrud.local/index.php?r=site/login
 ---
+2019/06/20 12:25:22 [error] [exception.CHttpException.400] CHttpException: Your request is invalid. in /usr/share/nginx/html/frmwork/framework/web/CController.php:336
+Stack trace:
+#0 /usr/share/nginx/html/frmwork/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /usr/share/nginx/html/frmwork/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /usr/share/nginx/html/frmwork/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /usr/share/nginx/html/frmwork/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /usr/share/nginx/html/frmwork/framework/web/CController.php(291): CFilterChain->run()
+#7 /usr/share/nginx/html/frmwork/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(282): CController->run('view')
+#9 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(141): CWebApplication->runController('users/view')
+#10 /usr/share/nginx/html/frmwork/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /usr/share/nginx/html/usercrud/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php?r=users/view
+---
+2019/06/21 11:07:48 [error] [exception.CHttpException.403] CHttpException: You are not authorized to perform this action. in /usr/share/nginx/html/frmwork/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /usr/share/nginx/html/frmwork/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /usr/share/nginx/html/frmwork/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /usr/share/nginx/html/frmwork/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /usr/share/nginx/html/frmwork/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /usr/share/nginx/html/frmwork/framework/web/CController.php(291): CFilterChain->run()
+#6 /usr/share/nginx/html/frmwork/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(282): CController->run('companyimport')
+#8 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(141): CWebApplication->runController('users/companyim...')
+#9 /usr/share/nginx/html/frmwork/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /usr/share/nginx/html/usercrud/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/index.php?r=users/companyimport
+---
+2019/06/21 11:08:26 [warning] [application] Failed to set unsafe attribute "file" of "CompanyImportForm".
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (217)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 11:08:31 [warning] [application] Failed to set unsafe attribute "file" of "CompanyImportForm".
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (217)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 11:09:25 [warning] [application] Failed to set unsafe attribute "file" of "CompanyImportForm".
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (217)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 11:09:38 [warning] [application] Failed to set unsafe attribute "file" of "CompanyImportForm".
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (217)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 11:11:42 [warning] [application] Failed to set unsafe attribute "file" of "CompanyImportForm".
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (217)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 11:11:51 [warning] [application] Failed to set unsafe attribute "file" of "CompanyImportForm".
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (217)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 11:12:24 [warning] [application] Failed to set unsafe attribute "file" of "CompanyImportForm".
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (217)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 11:12:53 [warning] [application] Failed to set unsafe attribute "file" of "CompanyImportForm".
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (217)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 11:12:54 [warning] [application] Failed to set unsafe attribute "file" of "CompanyImportForm".
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (217)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 11:12:58 [warning] [application] Failed to set unsafe attribute "file" of "CompanyImportForm".
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (217)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 11:23:58 [error] [exception.CException] CException: Property "CActiveForm.type" is not defined. in /usr/share/nginx/html/frmwork/framework/base/CComponent.php:173
+Stack trace:
+#0 /usr/share/nginx/html/frmwork/framework/web/CWidgetFactory.php(161): CComponent->__set('type', 'horizontal')
+#1 /usr/share/nginx/html/frmwork/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(UsersController), 'CActiveForm', Array)
+#2 /usr/share/nginx/html/frmwork/framework/web/CBaseController.php(189): CBaseController->createWidget('CActiveForm', Array)
+#3 /usr/share/nginx/html/usercrud/protected/views/users/companyimport.php(10): CBaseController->beginWidget('CActiveForm', Array)
+#4 /usr/share/nginx/html/frmwork/framework/web/CBaseController.php(126): require('/usr/share/ngin...')
+#5 /usr/share/nginx/html/frmwork/framework/web/CBaseController.php(95): CBaseController->renderInternal('/usr/share/ngin...', Array, true)
+#6 /usr/share/nginx/html/frmwork/framework/web/CController.php(869): CBaseController->renderFile('/usr/share/ngin...', Array, true)
+#7 /usr/share/nginx/html/frmwork/framework/web/CController.php(782): CController->renderPartial('companyimport', Array, true)
+#8 /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php(243): CController->render('companyimport', Array)
+#9 /usr/share/nginx/html/frmwork/framework/web/actions/CInlineAction.php(49): UsersController->actionCompanyimport()
+#10 /usr/share/nginx/html/frmwork/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 /usr/share/nginx/html/frmwork/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /usr/share/nginx/html/frmwork/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 /usr/share/nginx/html/frmwork/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 /usr/share/nginx/html/frmwork/framework/web/CController.php(291): CFilterChain->run()
+#17 /usr/share/nginx/html/frmwork/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(282): CController->run('companyimport')
+#19 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(141): CWebApplication->runController('users/companyim...')
+#20 /usr/share/nginx/html/frmwork/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /usr/share/nginx/html/usercrud/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/index.php?r=users/companyimport
+---
+2019/06/21 11:24:25 [error] [exception.CException] CException: Property "CActiveForm.type" is not defined. in /usr/share/nginx/html/frmwork/framework/base/CComponent.php:173
+Stack trace:
+#0 /usr/share/nginx/html/frmwork/framework/web/CWidgetFactory.php(161): CComponent->__set('type', 'horizontal')
+#1 /usr/share/nginx/html/frmwork/framework/web/CBaseController.php(146): CWidgetFactory->createWidget(Object(UsersController), 'CActiveForm', Array)
+#2 /usr/share/nginx/html/frmwork/framework/web/CBaseController.php(189): CBaseController->createWidget('CActiveForm', Array)
+#3 /usr/share/nginx/html/usercrud/protected/views/users/companyimport.php(10): CBaseController->beginWidget('CActiveForm', Array)
+#4 /usr/share/nginx/html/frmwork/framework/web/CBaseController.php(126): require('/usr/share/ngin...')
+#5 /usr/share/nginx/html/frmwork/framework/web/CBaseController.php(95): CBaseController->renderInternal('/usr/share/ngin...', Array, true)
+#6 /usr/share/nginx/html/frmwork/framework/web/CController.php(869): CBaseController->renderFile('/usr/share/ngin...', Array, true)
+#7 /usr/share/nginx/html/frmwork/framework/web/CController.php(782): CController->renderPartial('companyimport', Array, true)
+#8 /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php(243): CController->render('companyimport', Array)
+#9 /usr/share/nginx/html/frmwork/framework/web/actions/CInlineAction.php(49): UsersController->actionCompanyimport()
+#10 /usr/share/nginx/html/frmwork/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 /usr/share/nginx/html/frmwork/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /usr/share/nginx/html/frmwork/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 /usr/share/nginx/html/frmwork/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 /usr/share/nginx/html/frmwork/framework/web/CController.php(291): CFilterChain->run()
+#17 /usr/share/nginx/html/frmwork/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(282): CController->run('companyimport')
+#19 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(141): CWebApplication->runController('users/companyim...')
+#20 /usr/share/nginx/html/frmwork/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#21 /usr/share/nginx/html/usercrud/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/index.php?r=users/companyimport
+---
+2019/06/21 11:39:54 [warning] [application] Failed to set unsafe attribute "file" of "CompanyImportForm".
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (217)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 11:39:54 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'crud_app.tbl_user' doesn't exist. The SQL statement executed was: LOAD DATA LOCAL INFILE '/tmp/phpc1GsVT'INTO TABLE `tbl_user` FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '
+' IGNORE 1 LINES (`cname`, `items`).
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (230)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 11:40:54 [warning] [application] Failed to set unsafe attribute "file" of "CompanyImportForm".
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (217)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 11:40:54 [error] [php] PDOStatement::execute(): LOAD DATA LOCAL INFILE forbidden (/usr/share/nginx/html/frmwork/framework/db/CDbCommand.php:335)
+Stack trace:
+#0 /usr/share/nginx/html/frmwork/framework/web/actions/CInlineAction.php(49): UsersController->actionCompanyimport()
+#1 /usr/share/nginx/html/frmwork/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(133): UsersController->runAction()
+#3 /usr/share/nginx/html/frmwork/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#4 /usr/share/nginx/html/frmwork/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#5 /usr/share/nginx/html/frmwork/framework/web/filters/CInlineFilter.php(58): UsersController->filterAccessControl()
+#6 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#7 /usr/share/nginx/html/frmwork/framework/web/CController.php(291): CFilterChain->run()
+#8 /usr/share/nginx/html/frmwork/framework/web/CController.php(265): UsersController->runActionWithFilters()
+#9 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(282): UsersController->run()
+#10 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#11 /usr/share/nginx/html/frmwork/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#12 /usr/share/nginx/html/usercrud/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=users/companyimport
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (230)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 11:46:27 [warning] [application] Failed to set unsafe attribute "file" of "CompanyImportForm".
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (217)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 11:46:27 [error] [exception.CException] CException: Property "CDbConnection.0" is not defined. in /usr/share/nginx/html/frmwork/framework/base/CComponent.php:173
+Stack trace:
+#0 /usr/share/nginx/html/frmwork/framework/YiiBase.php(220): CComponent->__set('0', 'PDO::MYSQL_ATTR...')
+#1 /usr/share/nginx/html/frmwork/framework/base/CModule.php(386): YiiBase::createComponent(Array)
+#2 /usr/share/nginx/html/frmwork/framework/base/CModule.php(103): CModule->getComponent('db')
+#3 /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php(225): CModule->__get('db')
+#4 /usr/share/nginx/html/frmwork/framework/web/actions/CInlineAction.php(49): UsersController->actionCompanyimport()
+#5 /usr/share/nginx/html/frmwork/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 /usr/share/nginx/html/frmwork/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#8 /usr/share/nginx/html/frmwork/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 /usr/share/nginx/html/frmwork/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 /usr/share/nginx/html/frmwork/framework/web/CController.php(291): CFilterChain->run()
+#12 /usr/share/nginx/html/frmwork/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(282): CController->run('companyimport')
+#14 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(141): CWebApplication->runController('users/companyim...')
+#15 /usr/share/nginx/html/frmwork/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#16 /usr/share/nginx/html/usercrud/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php?r=users/companyimport
+HTTP_REFERER=http://usercrud.local/index.php?r=users/companyimport
+---
+2019/06/21 11:47:56 [warning] [application] Failed to set unsafe attribute "file" of "CompanyImportForm".
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (217)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 11:47:57 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 29 File '/tmp/phpNxdaRF' not found (Errcode: 13 "Permission denied"). The SQL statement executed was: LOAD DATA INFILE '/tmp/phpNxdaRF'INTO TABLE `company_info` FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '
+' IGNORE 1 LINES (`cname`, `items`).
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (230)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 11:52:36 [warning] [application] Failed to set unsafe attribute "file" of "CompanyImportForm".
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (217)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 11:52:36 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 29 File '/tmp/phpmO1DLF' not found (Errcode: 13 "Permission denied"). The SQL statement executed was: LOAD DATA INFILE '/tmp/phpmO1DLF'INTO TABLE `company_info` FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '
+' IGNORE 1 LINES (`cname`, `items`).
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (230)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 11:55:20 [warning] [application] Failed to set unsafe attribute "file" of "CompanyImportForm".
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (217)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 11:55:20 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 29 File '/tmp/phpgTLATY' not found (Errcode: 13 "Permission denied"). The SQL statement executed was: LOAD DATA INFILE '/tmp/phpgTLATY'INTO TABLE `company_info` FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '
+' IGNORE 1 LINES (`cname`, `items`).
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (230)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 11:56:48 [warning] [application] Failed to set unsafe attribute "file" of "CompanyImportForm".
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (217)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 11:56:48 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 29 File '/tmp/phpPIwfTJ' not found (Errcode: 13 "Permission denied"). The SQL statement executed was: LOAD DATA INFILE '/tmp/phpPIwfTJ'INTO TABLE `company_info` FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '
+' IGNORE 1 LINES (`cname`, `items`).
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (230)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 11:57:08 [warning] [application] Failed to set unsafe attribute "file" of "CompanyImportForm".
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (217)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 11:57:08 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 29 File '/tmp/phpQ0Vjaq' not found (Errcode: 13 "Permission denied"). The SQL statement executed was: LOAD DATA INFILE '/tmp/phpQ0Vjaq'INTO TABLE `company_info` FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '
+' IGNORE 1 LINES (`cname`, `items`).
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (230)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 11:57:57 [warning] [application] Failed to set unsafe attribute "file" of "CompanyImportForm".
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (217)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 11:57:57 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 29 File '/tmp/phpuDCk5T' not found (Errcode: 13 "Permission denied"). The SQL statement executed was: LOAD DATA INFILE '/tmp/phpuDCk5T'INTO TABLE `company_info` FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '
+' IGNORE 1 LINES (`cname`, `items`).
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (230)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 12:00:03 [warning] [application] Failed to set unsafe attribute "file" of "CompanyImportForm".
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (217)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 12:01:28 [warning] [application] Failed to set unsafe attribute "file" of "CompanyImportForm".
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (217)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 12:02:44 [warning] [application] Failed to set unsafe attribute "file" of "CompanyImportForm".
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (217)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 12:02:44 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 29 File '/tmp/phpX0DAUk' not found (Errcode: 13 "Permission denied"). The SQL statement executed was: LOAD DATA INFILE '/tmp/phpX0DAUk'INTO TABLE `company_info` FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '
+' IGNORE 1 LINES (`cname`, `items`).
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (227)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 12:02:44 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 29 File '/tmp/phpX0DAUk' not found (Errcode: 13 "Permission denied"). The SQL statement executed was: LOAD DATA INFILE '/tmp/phpX0DAUk'INTO TABLE `company_info` FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '
+' IGNORE 1 LINES (`cname`, `items`) in /usr/share/nginx/html/frmwork/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php(227): CDbCommand->execute()
+#1 /usr/share/nginx/html/frmwork/framework/web/actions/CInlineAction.php(49): UsersController->actionCompanyimport()
+#2 /usr/share/nginx/html/frmwork/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 /usr/share/nginx/html/frmwork/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /usr/share/nginx/html/frmwork/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 /usr/share/nginx/html/frmwork/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 /usr/share/nginx/html/frmwork/framework/web/CController.php(291): CFilterChain->run()
+#9 /usr/share/nginx/html/frmwork/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(282): CController->run('companyimport')
+#11 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(141): CWebApplication->runController('users/companyim...')
+#12 /usr/share/nginx/html/frmwork/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /usr/share/nginx/html/usercrud/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php?r=users/companyimport
+HTTP_REFERER=http://usercrud.local/index.php?r=users/companyimport
+---
+2019/06/21 12:09:18 [warning] [application] Failed to set unsafe attribute "file" of "CompanyImportForm".
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (217)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 12:09:19 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' IGNORE 1 LINES (`cname`, `items`)' at line 2. The SQL statement executed was: LOAD DATA INFILE '/tmp/phpzHidTn'INTO TABLE `company_info` FIELDS TERMINATED BY ',' ENCLOSED BY '\' LINES TERMINATED BY '
+' IGNORE 1 LINES (`cname`, `items`).
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (227)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 12:09:19 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' IGNORE 1 LINES (`cname`, `items`)' at line 2. The SQL statement executed was: LOAD DATA INFILE '/tmp/phpzHidTn'INTO TABLE `company_info` FIELDS TERMINATED BY ',' ENCLOSED BY '\' LINES TERMINATED BY '
+' IGNORE 1 LINES (`cname`, `items`) in /usr/share/nginx/html/frmwork/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php(227): CDbCommand->execute()
+#1 /usr/share/nginx/html/frmwork/framework/web/actions/CInlineAction.php(49): UsersController->actionCompanyimport()
+#2 /usr/share/nginx/html/frmwork/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 /usr/share/nginx/html/frmwork/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /usr/share/nginx/html/frmwork/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 /usr/share/nginx/html/frmwork/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 /usr/share/nginx/html/frmwork/framework/web/CController.php(291): CFilterChain->run()
+#9 /usr/share/nginx/html/frmwork/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(282): CController->run('companyimport')
+#11 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(141): CWebApplication->runController('users/companyim...')
+#12 /usr/share/nginx/html/frmwork/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /usr/share/nginx/html/usercrud/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php?r=users/companyimport
+HTTP_REFERER=http://usercrud.local/index.php?r=users/companyimport
+---
+2019/06/21 12:10:22 [warning] [application] Failed to set unsafe attribute "file" of "CompanyImportForm".
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (217)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 12:10:22 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''company_info' FIELDS TERMINATED BY ',' ENCLOSED BY '\' LINES TERMINATED BY '
+' ' at line 1. The SQL statement executed was: LOAD DATA INFILE '/tmp/php5X0zP0'INTO TABLE 'company_info' FIELDS TERMINATED BY ',' ENCLOSED BY '\' LINES TERMINATED BY '
+' IGNORE 1 LINES ('cname', 'items').
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (227)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 12:10:22 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''company_info' FIELDS TERMINATED BY ',' ENCLOSED BY '\' LINES TERMINATED BY '
+' ' at line 1. The SQL statement executed was: LOAD DATA INFILE '/tmp/php5X0zP0'INTO TABLE 'company_info' FIELDS TERMINATED BY ',' ENCLOSED BY '\' LINES TERMINATED BY '
+' IGNORE 1 LINES ('cname', 'items') in /usr/share/nginx/html/frmwork/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php(227): CDbCommand->execute()
+#1 /usr/share/nginx/html/frmwork/framework/web/actions/CInlineAction.php(49): UsersController->actionCompanyimport()
+#2 /usr/share/nginx/html/frmwork/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 /usr/share/nginx/html/frmwork/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /usr/share/nginx/html/frmwork/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 /usr/share/nginx/html/frmwork/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 /usr/share/nginx/html/frmwork/framework/web/CController.php(291): CFilterChain->run()
+#9 /usr/share/nginx/html/frmwork/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(282): CController->run('companyimport')
+#11 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(141): CWebApplication->runController('users/companyim...')
+#12 /usr/share/nginx/html/frmwork/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /usr/share/nginx/html/usercrud/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php?r=users/companyimport
+HTTP_REFERER=http://usercrud.local/index.php?r=users/companyimport
+---
+2019/06/21 12:15:01 [warning] [application] Failed to set unsafe attribute "file" of "CompanyImportForm".
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (217)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 12:15:01 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 29 File '/tmp/phpS2zxTt' not found (Errcode: 13 "Permission denied"). The SQL statement executed was: LOAD DATA INFILE '/tmp/phpS2zxTt'INTO TABLE `company_info` FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '
+' IGNORE 1 LINES (`cname`, `items`).
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (227)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 12:15:01 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 29 File '/tmp/phpS2zxTt' not found (Errcode: 13 "Permission denied"). The SQL statement executed was: LOAD DATA INFILE '/tmp/phpS2zxTt'INTO TABLE `company_info` FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '
+' IGNORE 1 LINES (`cname`, `items`) in /usr/share/nginx/html/frmwork/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php(227): CDbCommand->execute()
+#1 /usr/share/nginx/html/frmwork/framework/web/actions/CInlineAction.php(49): UsersController->actionCompanyimport()
+#2 /usr/share/nginx/html/frmwork/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 /usr/share/nginx/html/frmwork/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /usr/share/nginx/html/frmwork/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 /usr/share/nginx/html/frmwork/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 /usr/share/nginx/html/frmwork/framework/web/CController.php(291): CFilterChain->run()
+#9 /usr/share/nginx/html/frmwork/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(282): CController->run('companyimport')
+#11 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(141): CWebApplication->runController('users/companyim...')
+#12 /usr/share/nginx/html/frmwork/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /usr/share/nginx/html/usercrud/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php?r=users/companyimport
+HTTP_REFERER=http://usercrud.local/index.php?r=users/companyimport
+---
+2019/06/21 12:19:59 [error] [exception.ParseError] ParseError: syntax error, unexpected '\' (T_NS_SEPARATOR) in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php:223
+Stack trace:
+#0 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(276): CWebApplication->createController('companyimport/')
+#1 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(141): CWebApplication->runController('users/companyim...')
+#2 /usr/share/nginx/html/frmwork/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#3 /usr/share/nginx/html/usercrud/index.php(13): CApplication->run()
+#4 {main}
+REQUEST_URI=/index.php?r=users/companyimport
+---
+2019/06/21 12:20:28 [warning] [application] Failed to set unsafe attribute "file" of "CompanyImportForm".
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (217)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 12:20:28 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''company_info' FIELDS TERMINATED BY ',' ENCLOSED BY '\' LINES TERMINATED BY '
+' ' at line 1. The SQL statement executed was: LOAD DATA INFILE '/tmp/phpaHtojF'INTO TABLE 'company_info' FIELDS TERMINATED BY ',' ENCLOSED BY '\' LINES TERMINATED BY '
+' IGNORE 1 LINES ('cname', 'items').
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (227)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 12:20:28 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''company_info' FIELDS TERMINATED BY ',' ENCLOSED BY '\' LINES TERMINATED BY '
+' ' at line 1. The SQL statement executed was: LOAD DATA INFILE '/tmp/phpaHtojF'INTO TABLE 'company_info' FIELDS TERMINATED BY ',' ENCLOSED BY '\' LINES TERMINATED BY '
+' IGNORE 1 LINES ('cname', 'items') in /usr/share/nginx/html/frmwork/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php(227): CDbCommand->execute()
+#1 /usr/share/nginx/html/frmwork/framework/web/actions/CInlineAction.php(49): UsersController->actionCompanyimport()
+#2 /usr/share/nginx/html/frmwork/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 /usr/share/nginx/html/frmwork/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /usr/share/nginx/html/frmwork/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 /usr/share/nginx/html/frmwork/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 /usr/share/nginx/html/frmwork/framework/web/CController.php(291): CFilterChain->run()
+#9 /usr/share/nginx/html/frmwork/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(282): CController->run('companyimport')
+#11 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(141): CWebApplication->runController('users/companyim...')
+#12 /usr/share/nginx/html/frmwork/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /usr/share/nginx/html/usercrud/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php?r=users/companyimport
+HTTP_REFERER=http://usercrud.local/index.php?r=users/companyimport
+---
+2019/06/21 12:21:04 [warning] [application] Failed to set unsafe attribute "file" of "CompanyImportForm".
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (217)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 12:21:04 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''company_info' FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '
+' ' at line 1. The SQL statement executed was: LOAD DATA INFILE '/tmp/phpn10xH0'INTO TABLE 'company_info' FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '
+' IGNORE 1 LINES ('cname', 'items').
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (227)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 12:21:04 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''company_info' FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '
+' ' at line 1. The SQL statement executed was: LOAD DATA INFILE '/tmp/phpn10xH0'INTO TABLE 'company_info' FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '
+' IGNORE 1 LINES ('cname', 'items') in /usr/share/nginx/html/frmwork/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php(227): CDbCommand->execute()
+#1 /usr/share/nginx/html/frmwork/framework/web/actions/CInlineAction.php(49): UsersController->actionCompanyimport()
+#2 /usr/share/nginx/html/frmwork/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 /usr/share/nginx/html/frmwork/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /usr/share/nginx/html/frmwork/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 /usr/share/nginx/html/frmwork/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 /usr/share/nginx/html/frmwork/framework/web/CController.php(291): CFilterChain->run()
+#9 /usr/share/nginx/html/frmwork/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(282): CController->run('companyimport')
+#11 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(141): CWebApplication->runController('users/companyim...')
+#12 /usr/share/nginx/html/frmwork/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /usr/share/nginx/html/usercrud/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php?r=users/companyimport
+HTTP_REFERER=http://usercrud.local/index.php?r=users/companyimport
+---
+2019/06/21 12:22:27 [warning] [application] Failed to set unsafe attribute "file" of "CompanyImportForm".
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (217)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 12:22:27 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''company_info' FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '
+' ' at line 1. The SQL statement executed was: LOAD DATA INFILE '/tmp/phpFPxIP3'INTO TABLE 'company_info' FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '
+' IGNORE 1 LINES ('cname', 'items').
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (227)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 12:22:27 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''company_info' FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '
+' ' at line 1. The SQL statement executed was: LOAD DATA INFILE '/tmp/phpFPxIP3'INTO TABLE 'company_info' FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '
+' IGNORE 1 LINES ('cname', 'items') in /usr/share/nginx/html/frmwork/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php(227): CDbCommand->execute()
+#1 /usr/share/nginx/html/frmwork/framework/web/actions/CInlineAction.php(49): UsersController->actionCompanyimport()
+#2 /usr/share/nginx/html/frmwork/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 /usr/share/nginx/html/frmwork/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /usr/share/nginx/html/frmwork/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 /usr/share/nginx/html/frmwork/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 /usr/share/nginx/html/frmwork/framework/web/CController.php(291): CFilterChain->run()
+#9 /usr/share/nginx/html/frmwork/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(282): CController->run('companyimport')
+#11 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(141): CWebApplication->runController('users/companyim...')
+#12 /usr/share/nginx/html/frmwork/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /usr/share/nginx/html/usercrud/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php?r=users/companyimport
+HTTP_REFERER=http://usercrud.local/index.php?r=users/companyimport
+---
+2019/06/21 12:24:39 [warning] [application] Failed to set unsafe attribute "file" of "CompanyImportForm".
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (217)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 12:24:39 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''cname', 'items')' at line 1. The SQL statement executed was: LOAD DATA INFILE '/tmp/phpISciAu' INTO TABLE company_info FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '
+' IGNORE 1 LINES ('cname', 'items').
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (227)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 12:24:39 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''cname', 'items')' at line 1. The SQL statement executed was: LOAD DATA INFILE '/tmp/phpISciAu' INTO TABLE company_info FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '
+' IGNORE 1 LINES ('cname', 'items') in /usr/share/nginx/html/frmwork/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php(227): CDbCommand->execute()
+#1 /usr/share/nginx/html/frmwork/framework/web/actions/CInlineAction.php(49): UsersController->actionCompanyimport()
+#2 /usr/share/nginx/html/frmwork/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 /usr/share/nginx/html/frmwork/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /usr/share/nginx/html/frmwork/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 /usr/share/nginx/html/frmwork/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 /usr/share/nginx/html/frmwork/framework/web/CController.php(291): CFilterChain->run()
+#9 /usr/share/nginx/html/frmwork/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(282): CController->run('companyimport')
+#11 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(141): CWebApplication->runController('users/companyim...')
+#12 /usr/share/nginx/html/frmwork/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /usr/share/nginx/html/usercrud/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php?r=users/companyimport
+HTTP_REFERER=http://usercrud.local/index.php?r=users/companyimport
+---
+2019/06/21 12:24:55 [warning] [application] Failed to set unsafe attribute "file" of "CompanyImportForm".
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (217)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 12:24:55 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''cname', 'items')' at line 1. The SQL statement executed was: LOAD DATA INFILE '/tmp/phpvFuX7B' INTO TABLE company_info FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '
+' IGNORE 1 LINES ('cname', 'items').
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (227)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 12:24:55 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''cname', 'items')' at line 1. The SQL statement executed was: LOAD DATA INFILE '/tmp/phpvFuX7B' INTO TABLE company_info FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '
+' IGNORE 1 LINES ('cname', 'items') in /usr/share/nginx/html/frmwork/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php(227): CDbCommand->execute()
+#1 /usr/share/nginx/html/frmwork/framework/web/actions/CInlineAction.php(49): UsersController->actionCompanyimport()
+#2 /usr/share/nginx/html/frmwork/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 /usr/share/nginx/html/frmwork/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /usr/share/nginx/html/frmwork/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 /usr/share/nginx/html/frmwork/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 /usr/share/nginx/html/frmwork/framework/web/CController.php(291): CFilterChain->run()
+#9 /usr/share/nginx/html/frmwork/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(282): CController->run('companyimport')
+#11 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(141): CWebApplication->runController('users/companyim...')
+#12 /usr/share/nginx/html/frmwork/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /usr/share/nginx/html/usercrud/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php?r=users/companyimport
+HTTP_REFERER=http://usercrud.local/index.php?r=users/companyimport
+---
+2019/06/21 12:25:57 [warning] [application] Failed to set unsafe attribute "file" of "CompanyImportForm".
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (217)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 12:25:58 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 29 File '/tmp/php8fk7au' not found (Errcode: 13 "Permission denied"). The SQL statement executed was: LOAD DATA INFILE '/tmp/php8fk7au' INTO TABLE company_info FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '
+' IGNORE 1 LINES (cname, items).
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (227)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 12:25:58 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 29 File '/tmp/php8fk7au' not found (Errcode: 13 "Permission denied"). The SQL statement executed was: LOAD DATA INFILE '/tmp/php8fk7au' INTO TABLE company_info FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '
+' IGNORE 1 LINES (cname, items) in /usr/share/nginx/html/frmwork/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php(227): CDbCommand->execute()
+#1 /usr/share/nginx/html/frmwork/framework/web/actions/CInlineAction.php(49): UsersController->actionCompanyimport()
+#2 /usr/share/nginx/html/frmwork/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 /usr/share/nginx/html/frmwork/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /usr/share/nginx/html/frmwork/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 /usr/share/nginx/html/frmwork/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 /usr/share/nginx/html/frmwork/framework/web/CController.php(291): CFilterChain->run()
+#9 /usr/share/nginx/html/frmwork/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(282): CController->run('companyimport')
+#11 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(141): CWebApplication->runController('users/companyim...')
+#12 /usr/share/nginx/html/frmwork/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /usr/share/nginx/html/usercrud/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php?r=users/companyimport
+HTTP_REFERER=http://usercrud.local/index.php?r=users/companyimport
+---
+2019/06/21 12:26:53 [warning] [application] Failed to set unsafe attribute "file" of "CompanyImportForm".
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (217)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 12:26:53 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 29 File '/tmp/phps7BzVc' not found (Errcode: 13 "Permission denied"). The SQL statement executed was: LOAD DATA INFILE '/tmp/phps7BzVc' INTO TABLE company_info FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '
+' IGNORE 1 LINES (id, cname, items).
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (227)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 12:26:53 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 29 File '/tmp/phps7BzVc' not found (Errcode: 13 "Permission denied"). The SQL statement executed was: LOAD DATA INFILE '/tmp/phps7BzVc' INTO TABLE company_info FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '
+' IGNORE 1 LINES (id, cname, items) in /usr/share/nginx/html/frmwork/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php(227): CDbCommand->execute()
+#1 /usr/share/nginx/html/frmwork/framework/web/actions/CInlineAction.php(49): UsersController->actionCompanyimport()
+#2 /usr/share/nginx/html/frmwork/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 /usr/share/nginx/html/frmwork/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /usr/share/nginx/html/frmwork/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 /usr/share/nginx/html/frmwork/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 /usr/share/nginx/html/frmwork/framework/web/CController.php(291): CFilterChain->run()
+#9 /usr/share/nginx/html/frmwork/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(282): CController->run('companyimport')
+#11 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(141): CWebApplication->runController('users/companyim...')
+#12 /usr/share/nginx/html/frmwork/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /usr/share/nginx/html/usercrud/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php?r=users/companyimport
+HTTP_REFERER=http://usercrud.local/index.php?r=users/companyimport
+---
+2019/06/21 12:27:38 [warning] [application] Failed to set unsafe attribute "file" of "CompanyImportForm".
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (217)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 12:27:38 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 29 File '/tmp/phptJtQ3P' not found (Errcode: 13 "Permission denied"). The SQL statement executed was: LOAD DATA INFILE '/tmp/phptJtQ3P'INTO TABLE `company_info` FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '
+' IGNORE 1 LINES (`id`, `cname`, `items`).
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (227)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 12:27:38 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 29 File '/tmp/phptJtQ3P' not found (Errcode: 13 "Permission denied"). The SQL statement executed was: LOAD DATA INFILE '/tmp/phptJtQ3P'INTO TABLE `company_info` FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '
+' IGNORE 1 LINES (`id`, `cname`, `items`) in /usr/share/nginx/html/frmwork/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php(227): CDbCommand->execute()
+#1 /usr/share/nginx/html/frmwork/framework/web/actions/CInlineAction.php(49): UsersController->actionCompanyimport()
+#2 /usr/share/nginx/html/frmwork/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 /usr/share/nginx/html/frmwork/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /usr/share/nginx/html/frmwork/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 /usr/share/nginx/html/frmwork/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 /usr/share/nginx/html/frmwork/framework/web/CController.php(291): CFilterChain->run()
+#9 /usr/share/nginx/html/frmwork/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(282): CController->run('companyimport')
+#11 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(141): CWebApplication->runController('users/companyim...')
+#12 /usr/share/nginx/html/frmwork/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /usr/share/nginx/html/usercrud/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php?r=users/companyimport
+HTTP_REFERER=http://usercrud.local/index.php?r=users/companyimport
+---
+2019/06/21 12:34:29 [warning] [application] Failed to set unsafe attribute "file" of "CompanyImportForm".
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (217)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 12:34:29 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 29 File '/tmp/phpHJ268X' not found (Errcode: 13 "Permission denied"). The SQL statement executed was: LOAD DATA INFILE '/tmp/phpHJ268X'INTO TABLE `company_info` FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '
+' IGNORE 1 LINES (`id`, `cname`, `items`).
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (227)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 12:34:29 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 29 File '/tmp/phpHJ268X' not found (Errcode: 13 "Permission denied"). The SQL statement executed was: LOAD DATA INFILE '/tmp/phpHJ268X'INTO TABLE `company_info` FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '
+' IGNORE 1 LINES (`id`, `cname`, `items`) in /usr/share/nginx/html/frmwork/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php(227): CDbCommand->execute()
+#1 /usr/share/nginx/html/frmwork/framework/web/actions/CInlineAction.php(49): UsersController->actionCompanyimport()
+#2 /usr/share/nginx/html/frmwork/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 /usr/share/nginx/html/frmwork/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /usr/share/nginx/html/frmwork/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 /usr/share/nginx/html/frmwork/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 /usr/share/nginx/html/frmwork/framework/web/CController.php(291): CFilterChain->run()
+#9 /usr/share/nginx/html/frmwork/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(282): CController->run('companyimport')
+#11 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(141): CWebApplication->runController('users/companyim...')
+#12 /usr/share/nginx/html/frmwork/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /usr/share/nginx/html/usercrud/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php?r=users/companyimport
+HTTP_REFERER=http://usercrud.local/index.php?r=users/companyimport
+---
+2019/06/21 12:36:04 [warning] [application] Failed to set unsafe attribute "file" of "CompanyImportForm".
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (217)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 12:36:10 [warning] [application] Failed to set unsafe attribute "file" of "CompanyImportForm".
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (217)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 12:36:10 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 29 File '/tmp/phputUpr1' not found (Errcode: 13 "Permission denied"). The SQL statement executed was: LOAD DATA INFILE '/tmp/phputUpr1'INTO TABLE `company_info` FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '
+' IGNORE 1 LINES (`id`, `cname`, `items`).
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (227)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 12:36:10 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 29 File '/tmp/phputUpr1' not found (Errcode: 13 "Permission denied"). The SQL statement executed was: LOAD DATA INFILE '/tmp/phputUpr1'INTO TABLE `company_info` FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '
+' IGNORE 1 LINES (`id`, `cname`, `items`) in /usr/share/nginx/html/frmwork/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php(227): CDbCommand->execute()
+#1 /usr/share/nginx/html/frmwork/framework/web/actions/CInlineAction.php(49): UsersController->actionCompanyimport()
+#2 /usr/share/nginx/html/frmwork/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 /usr/share/nginx/html/frmwork/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /usr/share/nginx/html/frmwork/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 /usr/share/nginx/html/frmwork/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 /usr/share/nginx/html/frmwork/framework/web/CController.php(291): CFilterChain->run()
+#9 /usr/share/nginx/html/frmwork/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(282): CController->run('companyimport')
+#11 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(141): CWebApplication->runController('users/companyim...')
+#12 /usr/share/nginx/html/frmwork/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /usr/share/nginx/html/usercrud/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php?r=users/companyimport
+HTTP_REFERER=http://usercrud.local/index.php?r=users/companyimport
+---
+2019/06/21 12:48:24 [warning] [application] Failed to set unsafe attribute "file" of "CompanyImportForm".
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (217)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 12:48:35 [warning] [application] Failed to set unsafe attribute "file" of "CompanyImportForm".
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (217)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 12:48:36 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 29 File '/tmp/php7cdl4z' not found (Errcode: 13 "Permission denied"). The SQL statement executed was: LOAD DATA INFILE '/tmp/php7cdl4z'INTO TABLE `company_info` FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '
+' IGNORE 1 LINES (`id`, `cname`, `items`).
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (227)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 12:48:36 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 29 File '/tmp/php7cdl4z' not found (Errcode: 13 "Permission denied"). The SQL statement executed was: LOAD DATA INFILE '/tmp/php7cdl4z'INTO TABLE `company_info` FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '
+' IGNORE 1 LINES (`id`, `cname`, `items`) in /usr/share/nginx/html/frmwork/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php(227): CDbCommand->execute()
+#1 /usr/share/nginx/html/frmwork/framework/web/actions/CInlineAction.php(49): UsersController->actionCompanyimport()
+#2 /usr/share/nginx/html/frmwork/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 /usr/share/nginx/html/frmwork/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /usr/share/nginx/html/frmwork/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 /usr/share/nginx/html/frmwork/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 /usr/share/nginx/html/frmwork/framework/web/CController.php(291): CFilterChain->run()
+#9 /usr/share/nginx/html/frmwork/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(282): CController->run('companyimport')
+#11 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(141): CWebApplication->runController('users/companyim...')
+#12 /usr/share/nginx/html/frmwork/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /usr/share/nginx/html/usercrud/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php?r=users/companyimport
+HTTP_REFERER=http://usercrud.local/index.php?r=users/companyimport
+---
+2019/06/21 13:05:20 [warning] [application] Failed to set unsafe attribute "file" of "CompanyImportForm".
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (217)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 13:05:21 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 29 File '/tmp/phpUUJeoY' not found (Errcode: 13 "Permission denied"). The SQL statement executed was: LOAD DATA INFILE '/tmp/phpUUJeoY'INTO TABLE `company_info` FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '
+' IGNORE 1 LINES (`id`, `cname`, `items`).
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (227)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 13:05:21 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 29 File '/tmp/phpUUJeoY' not found (Errcode: 13 "Permission denied"). The SQL statement executed was: LOAD DATA INFILE '/tmp/phpUUJeoY'INTO TABLE `company_info` FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '
+' IGNORE 1 LINES (`id`, `cname`, `items`) in /usr/share/nginx/html/frmwork/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php(227): CDbCommand->execute()
+#1 /usr/share/nginx/html/frmwork/framework/web/actions/CInlineAction.php(49): UsersController->actionCompanyimport()
+#2 /usr/share/nginx/html/frmwork/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 /usr/share/nginx/html/frmwork/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /usr/share/nginx/html/frmwork/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 /usr/share/nginx/html/frmwork/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 /usr/share/nginx/html/frmwork/framework/web/CController.php(291): CFilterChain->run()
+#9 /usr/share/nginx/html/frmwork/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(282): CController->run('companyimport')
+#11 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(141): CWebApplication->runController('users/companyim...')
+#12 /usr/share/nginx/html/frmwork/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /usr/share/nginx/html/usercrud/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php?r=users/companyimport
+HTTP_REFERER=http://usercrud.local/index.php?r=users/companyimport
+---
+2019/06/21 13:07:33 [warning] [application] Failed to set unsafe attribute "file" of "CompanyImportForm".
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (217)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 13:07:33 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 29 File '/tmp/phpal2Wug' not found (Errcode: 13 "Permission denied"). The SQL statement executed was: LOAD DATA INFILE '/tmp/phpal2Wug'INTO TABLE `company_info` FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '
+' IGNORE 1 LINES (`id`, `cname`, `items`).
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (227)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 13:07:33 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 29 File '/tmp/phpal2Wug' not found (Errcode: 13 "Permission denied"). The SQL statement executed was: LOAD DATA INFILE '/tmp/phpal2Wug'INTO TABLE `company_info` FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '
+' IGNORE 1 LINES (`id`, `cname`, `items`) in /usr/share/nginx/html/frmwork/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php(227): CDbCommand->execute()
+#1 /usr/share/nginx/html/frmwork/framework/web/actions/CInlineAction.php(49): UsersController->actionCompanyimport()
+#2 /usr/share/nginx/html/frmwork/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 /usr/share/nginx/html/frmwork/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /usr/share/nginx/html/frmwork/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 /usr/share/nginx/html/frmwork/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 /usr/share/nginx/html/frmwork/framework/web/CController.php(291): CFilterChain->run()
+#9 /usr/share/nginx/html/frmwork/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(282): CController->run('companyimport')
+#11 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(141): CWebApplication->runController('users/companyim...')
+#12 /usr/share/nginx/html/frmwork/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /usr/share/nginx/html/usercrud/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php?r=users/companyimport
+HTTP_REFERER=http://usercrud.local/index.php?r=users/companyimport
+---
+2019/06/21 13:09:54 [warning] [application] Failed to set unsafe attribute "file" of "CompanyImportForm".
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (217)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 13:09:54 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 29 File '/tmp/phpiDdWyo' not found (Errcode: 13 "Permission denied"). The SQL statement executed was: LOAD DATA INFILE '/tmp/phpiDdWyo'INTO TABLE `company_info` FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '
+' IGNORE 1 LINES (`id`, `cname`, `items`).
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (227)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 13:09:54 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 29 File '/tmp/phpiDdWyo' not found (Errcode: 13 "Permission denied"). The SQL statement executed was: LOAD DATA INFILE '/tmp/phpiDdWyo'INTO TABLE `company_info` FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '
+' IGNORE 1 LINES (`id`, `cname`, `items`) in /usr/share/nginx/html/frmwork/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php(227): CDbCommand->execute()
+#1 /usr/share/nginx/html/frmwork/framework/web/actions/CInlineAction.php(49): UsersController->actionCompanyimport()
+#2 /usr/share/nginx/html/frmwork/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 /usr/share/nginx/html/frmwork/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /usr/share/nginx/html/frmwork/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 /usr/share/nginx/html/frmwork/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 /usr/share/nginx/html/frmwork/framework/web/CController.php(291): CFilterChain->run()
+#9 /usr/share/nginx/html/frmwork/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(282): CController->run('companyimport')
+#11 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(141): CWebApplication->runController('users/companyim...')
+#12 /usr/share/nginx/html/frmwork/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /usr/share/nginx/html/usercrud/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php?r=users/companyimport
+HTTP_REFERER=http://usercrud.local/index.php?r=users/companyimport
+---
+2019/06/21 13:11:43 [warning] [application] Failed to set unsafe attribute "file" of "CompanyImportForm".
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (217)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 13:11:43 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 29 File '/tmp/phpbPI6ln' not found (Errcode: 13 "Permission denied"). The SQL statement executed was: LOAD DATA INFILE '/tmp/phpbPI6ln'INTO TABLE `company_info` FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '
+' IGNORE 1 LINES (`id`, `cname`, `items`).
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (227)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 13:11:43 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 29 File '/tmp/phpbPI6ln' not found (Errcode: 13 "Permission denied"). The SQL statement executed was: LOAD DATA INFILE '/tmp/phpbPI6ln'INTO TABLE `company_info` FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '
+' IGNORE 1 LINES (`id`, `cname`, `items`) in /usr/share/nginx/html/frmwork/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php(227): CDbCommand->execute()
+#1 /usr/share/nginx/html/frmwork/framework/web/actions/CInlineAction.php(49): UsersController->actionCompanyimport()
+#2 /usr/share/nginx/html/frmwork/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 /usr/share/nginx/html/frmwork/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /usr/share/nginx/html/frmwork/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 /usr/share/nginx/html/frmwork/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 /usr/share/nginx/html/frmwork/framework/web/CController.php(291): CFilterChain->run()
+#9 /usr/share/nginx/html/frmwork/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(282): CController->run('companyimport')
+#11 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(141): CWebApplication->runController('users/companyim...')
+#12 /usr/share/nginx/html/frmwork/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /usr/share/nginx/html/usercrud/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php?r=users/companyimport
+HTTP_REFERER=http://usercrud.local/index.php?r=users/companyimport
+---
+2019/06/21 13:17:30 [warning] [application] Failed to set unsafe attribute "file" of "CompanyImportForm".
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (217)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 13:17:30 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 29 File '/tmp/phpQHkIV8' not found (Errcode: 13 "Permission denied"). The SQL statement executed was: LOAD DATA INFILE '/tmp/phpQHkIV8'INTO TABLE `company_info` FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '
+' IGNORE 1 LINES (`id`, `cname`, `items`).
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (227)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 13:17:30 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 29 File '/tmp/phpQHkIV8' not found (Errcode: 13 "Permission denied"). The SQL statement executed was: LOAD DATA INFILE '/tmp/phpQHkIV8'INTO TABLE `company_info` FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '
+' IGNORE 1 LINES (`id`, `cname`, `items`) in /usr/share/nginx/html/frmwork/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php(227): CDbCommand->execute()
+#1 /usr/share/nginx/html/frmwork/framework/web/actions/CInlineAction.php(49): UsersController->actionCompanyimport()
+#2 /usr/share/nginx/html/frmwork/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 /usr/share/nginx/html/frmwork/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /usr/share/nginx/html/frmwork/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 /usr/share/nginx/html/frmwork/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 /usr/share/nginx/html/frmwork/framework/web/CController.php(291): CFilterChain->run()
+#9 /usr/share/nginx/html/frmwork/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(282): CController->run('companyimport')
+#11 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(141): CWebApplication->runController('users/companyim...')
+#12 /usr/share/nginx/html/frmwork/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /usr/share/nginx/html/usercrud/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php?r=users/companyimport
+HTTP_REFERER=http://usercrud.local/index.php?r=users/companyimport
+---
+2019/06/21 13:17:38 [warning] [application] Failed to set unsafe attribute "file" of "CompanyImportForm".
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (217)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 13:17:38 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 29 File '/tmp/phpCMHlcM' not found (Errcode: 13 "Permission denied"). The SQL statement executed was: LOAD DATA INFILE '/tmp/phpCMHlcM'INTO TABLE `company_info` FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '
+' IGNORE 1 LINES (`id`, `cname`, `items`).
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (227)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 13:17:38 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 29 File '/tmp/phpCMHlcM' not found (Errcode: 13 "Permission denied"). The SQL statement executed was: LOAD DATA INFILE '/tmp/phpCMHlcM'INTO TABLE `company_info` FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '
+' IGNORE 1 LINES (`id`, `cname`, `items`) in /usr/share/nginx/html/frmwork/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php(227): CDbCommand->execute()
+#1 /usr/share/nginx/html/frmwork/framework/web/actions/CInlineAction.php(49): UsersController->actionCompanyimport()
+#2 /usr/share/nginx/html/frmwork/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 /usr/share/nginx/html/frmwork/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /usr/share/nginx/html/frmwork/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 /usr/share/nginx/html/frmwork/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 /usr/share/nginx/html/frmwork/framework/web/CController.php(291): CFilterChain->run()
+#9 /usr/share/nginx/html/frmwork/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(282): CController->run('companyimport')
+#11 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(141): CWebApplication->runController('users/companyim...')
+#12 /usr/share/nginx/html/frmwork/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /usr/share/nginx/html/usercrud/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php?r=users/companyimport
+HTTP_REFERER=http://usercrud.local/index.php?r=users/companyimport
+---
+2019/06/21 13:24:05 [warning] [application] Failed to set unsafe attribute "file" of "CompanyImportForm".
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (217)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 13:24:05 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 29 File '/tmp/phpytiNXs' not found (Errcode: 13 "Permission denied"). The SQL statement executed was: LOAD DATA INFILE '/tmp/phpytiNXs'INTO TABLE `company_info` FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '
+' IGNORE 1 LINES (`id`, `cname`, `items`).
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (227)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 13:24:05 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 29 File '/tmp/phpytiNXs' not found (Errcode: 13 "Permission denied"). The SQL statement executed was: LOAD DATA INFILE '/tmp/phpytiNXs'INTO TABLE `company_info` FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '
+' IGNORE 1 LINES (`id`, `cname`, `items`) in /usr/share/nginx/html/frmwork/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php(227): CDbCommand->execute()
+#1 /usr/share/nginx/html/frmwork/framework/web/actions/CInlineAction.php(49): UsersController->actionCompanyimport()
+#2 /usr/share/nginx/html/frmwork/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 /usr/share/nginx/html/frmwork/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /usr/share/nginx/html/frmwork/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 /usr/share/nginx/html/frmwork/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 /usr/share/nginx/html/frmwork/framework/web/CController.php(291): CFilterChain->run()
+#9 /usr/share/nginx/html/frmwork/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(282): CController->run('companyimport')
+#11 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(141): CWebApplication->runController('users/companyim...')
+#12 /usr/share/nginx/html/frmwork/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /usr/share/nginx/html/usercrud/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php?r=users/companyimport
+HTTP_REFERER=http://usercrud.local/index.php?r=users/companyimport
+---
+2019/06/21 13:30:31 [warning] [application] Failed to set unsafe attribute "file" of "CompanyImportForm".
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (217)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 13:30:31 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 29 File '/tmp/phpQ4m22q' not found (Errcode: 13 "Permission denied"). The SQL statement executed was: LOAD DATA INFILE '/tmp/phpQ4m22q'INTO TABLE `company_info` FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '
+' IGNORE 1 LINES (`id`, `cname`, `items`).
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (227)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 13:30:31 [error] [exception.CDbException] CDbException: CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 29 File '/tmp/phpQ4m22q' not found (Errcode: 13 "Permission denied"). The SQL statement executed was: LOAD DATA INFILE '/tmp/phpQ4m22q'INTO TABLE `company_info` FIELDS TERMINATED BY ',' ENCLOSED BY '"' LINES TERMINATED BY '
+' IGNORE 1 LINES (`id`, `cname`, `items`) in /usr/share/nginx/html/frmwork/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php(227): CDbCommand->execute()
+#1 /usr/share/nginx/html/frmwork/framework/web/actions/CInlineAction.php(49): UsersController->actionCompanyimport()
+#2 /usr/share/nginx/html/frmwork/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 /usr/share/nginx/html/frmwork/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#5 /usr/share/nginx/html/frmwork/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#6 /usr/share/nginx/html/frmwork/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#7 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#8 /usr/share/nginx/html/frmwork/framework/web/CController.php(291): CFilterChain->run()
+#9 /usr/share/nginx/html/frmwork/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(282): CController->run('companyimport')
+#11 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(141): CWebApplication->runController('users/companyim...')
+#12 /usr/share/nginx/html/frmwork/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#13 /usr/share/nginx/html/usercrud/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php?r=users/companyimport
+HTTP_REFERER=http://usercrud.local/index.php?r=users/companyimport
+---
+2019/06/21 18:18:18 [warning] [application] Failed to set unsafe attribute "file" of "CompanyImportForm".
+in /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php (217)
+in /usr/share/nginx/html/usercrud/index.php (13)
+2019/06/21 18:18:18 [error] [exception.CDbException] CDbException: CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] No such file or directory in /usr/share/nginx/html/frmwork/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /usr/share/nginx/html/frmwork/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /usr/share/nginx/html/frmwork/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /usr/share/nginx/html/frmwork/framework/base/CModule.php(387): CDbConnection->init()
+#3 /usr/share/nginx/html/frmwork/framework/base/CModule.php(103): CModule->getComponent('db')
+#4 /usr/share/nginx/html/usercrud/protected/controllers/UsersController.php(225): CModule->__get('db')
+#5 /usr/share/nginx/html/frmwork/framework/web/actions/CInlineAction.php(49): UsersController->actionCompanyimport()
+#6 /usr/share/nginx/html/frmwork/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#7 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#8 /usr/share/nginx/html/frmwork/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#9 /usr/share/nginx/html/frmwork/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#10 /usr/share/nginx/html/frmwork/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#11 /usr/share/nginx/html/frmwork/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#12 /usr/share/nginx/html/frmwork/framework/web/CController.php(291): CFilterChain->run()
+#13 /usr/share/nginx/html/frmwork/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(282): CController->run('companyimport')
+#15 /usr/share/nginx/html/frmwork/framework/web/CWebApplication.php(141): CWebApplication->runController('users/companyim...')
+#16 /usr/share/nginx/html/frmwork/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#17 /usr/share/nginx/html/usercrud/index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/index.php?r=users/companyimport
+HTTP_REFERER=http://usercrud.local/index.php?r=users/companyimport
+---

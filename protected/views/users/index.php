@@ -63,7 +63,7 @@ $this->menu=array(
 	.trigger_popup_fricc{
 		display: block;
 		position: fixed;
-		bottom: 10;
+		/*bottom: 100;*/
 		right: 42%;
 		width: 300px;
 		border: 3px solid #73AD21;
@@ -100,8 +100,8 @@ $this->menu=array(
     padding: 15px 5%;
 }
 .popupCloseButton {
-    background-color: #fff;
-    border: 3px solid #999;
+    background-color: red;
+    border: 1px solid #999;
     border-radius: 50px;
     cursor: pointer;
     display: inline-block;

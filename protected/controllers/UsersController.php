@@ -32,7 +32,7 @@ class UsersController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('update','view', 'index'),
+				'actions'=>array('update','view', 'index', 'companyimport'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -198,5 +198,50 @@ class UsersController extends Controller
 	        }
 	    }
 	    $this->render('register',array('model'=>$model));
+	}
+	public function actionCompanyimport()
+	{
+	    $model=new CompanyImportForm;
+
+	    // uncomment the following code to enable ajax-based validation
+	    /*
+	    if(isset($_POST['ajax']) && $_POST['ajax']==='company-import-form-companyimport-form')
+	    {
+	        echo CActiveForm::validate($model);
+	        Yii::app()->end();
+	    }
+	    */
+
+	    if(isset($_POST['CompanyImportForm']))
+	    {
+	        $model->attributes=$_POST['CompanyImportForm'];
+	        if($model->validate())
+			{
+	          	$file = fopen('<?php echo Yii::app()->request->baseUrl; ?>/csv/custom_extraction_finance_online_final.csv', 'r');
+				$data = array();
+				while (($line = fgetcsv($file)) !== FALSE) {
+				    //$line is an array of the csv elements
+				    $data[] = $line;
+				}
+				fclose($file);
+				$columns = array();
+				foreach ($data[0] as $key => $value) {
+				    $columns[] = array(
+				        'name' => $key,
+				        'header' => $value,
+				    );
+				}
+				$data = array_slice($data, 1);
+				$dataProvider = new CArrayDataProvider($data, array(
+				    'keyField' => 0,
+				));
+				$this->widget('zii.widgets.grid.CGridView', array(
+				    'dataProvider' => $dataProvider,
+				    'columns' => $columns
+				));
+				$this->redirect(array("users/index"));
+			} 
+	    }
+	    $this->render('companyimport',array('model'=>$model));
 	}
 }
